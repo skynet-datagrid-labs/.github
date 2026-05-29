@@ -81,7 +81,7 @@ Automated machine learning system for customer churn prediction. Implements comp
 |:---|:---|
 | [churn-odyssey-mlops](https://github.com/skynet-datagrid-labs/churn-odyssey-mlops) | Production MLOps pipeline |
 | [churn-flagship-project](https://github.com/skynet-datagrid-labs/churn-flagship-project) | Core churn analysis system |
-
+| [Customer-Churn-prediction](https://github.com/skynet-datagrid-labs/customer-churn-prediction) | Customer churn predictions |
 ---
 
 ### Computer Vision System
