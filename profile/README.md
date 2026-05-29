@@ -44,7 +44,7 @@ real-world machine learning systems — from raw data to deployed models.
 
 ##  Our Team
 
-6 collaborators | Senior Data Science Students | GitHub Education
+6 collaborators | Senior Year Data Science Students | GitHub Education
 
  [tonykenga23@gmail.com](mailto:tonykenga23@gmail.com)
 
