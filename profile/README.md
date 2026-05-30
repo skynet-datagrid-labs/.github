@@ -124,7 +124,7 @@ Business intelligence asset synthesizing six years of transactional data into ex
 | Power BI | ![Power BI Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/sales-intelligence-dashboard/main/assets/salez.gif) |
 | Tableau Visual 1| ![Tableau Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/sales-intelligence-dashboard/main/assets/Usingtableau2.gif) |
 | Tableau Visual 2 | ![Tableau Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/sales-intelligence-dashboard/main/assets/KPIS.gif) |
-| Tableau Visual 3 | ![Tableau Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/sales-intelligence-dashboard/main/assets/Mykpisdashboard.gif) | 
+| Tableau Visual 3 | ![Tableau Demo](https://github.com/skynet-datagrid-labs/sales-intelligence-dashboard/blob/main/assets/Mykpisdashboard.gif) | 
 | Tableau Visual 4 | ![Tableau Demo](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales/blob/main/assets/SalesKPIKenya.gif) |
 | Repository | Description |
 | [sales-intelligence-dashboard](https://github.com/skynet-datagrid-labs/sales-intelligence-dashboard) | Executive BI asset |
