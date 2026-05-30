@@ -72,6 +72,10 @@ We are a student-led machine learning laboratory comprising six senior-year data
 
 Automated machine learning system for customer churn prediction. Implements complete MLOps lifecycle: data validation, feature engineering, parallel model training, REST API deployment, drift monitoring, and scheduled retraining.
 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_LOADING_CHURN_CORE_·_XGBoost_+_Scikit-learn_+_FastAPI_·_DRIFT_MONITOR_ARMED_·_AUTO-RETRAIN_LOCKED_✓" alt="Churn Preview" />
+</p>
+
 **`Live Demo:`**
 
 ![Churn Prediction Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/customer-churn-prediction/main/assets/ML-churn.gif)
@@ -89,6 +93,10 @@ Automated machine learning system for customer churn prediction. Implements comp
 
 Real-time object detection engineered for edge deployment. Achieves 94% mean Average Precision at 30+ frames per second on standard GPU hardware.
 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_ACTIVATING_VISION_CORE_·_YOLOv11_+_ResNet152_+_OpenCV_·_94%25_mAP_·_30+_FPS_·_EDGE_DEPLOYED_✓" alt="CV Preview" />
+</p>
+
 **`Live Demo:`**
 
 ![Computer Vision Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/COMPUTER-VISION/main/assets/cv-demo.gif)
@@ -104,6 +112,10 @@ Real-time object detection engineered for edge deployment. Achieves 94% mean Ave
 **Stack:** Power BI · Tableau · DAX
 
 Business intelligence asset synthesizing six years of transactional data into executive-level strategic intelligence with real-time KPI monitoring and regional profitability analysis.
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_RENDERING_POWER_BI_LAYER_·_6_YEARS_OF_TRANSACTIONAL_DATA_·_EXECUTIVE_KPI_DASHBOARD_LIVE_✓" alt="Power BI Preview" />
+</p>
 
 **`Live Demos:`**
 
