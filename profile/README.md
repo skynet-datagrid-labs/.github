@@ -128,7 +128,7 @@ Business intelligence asset synthesizing six years of transactional data into ex
 | Tableau Visual 4 | ![Tableau Demo](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales/blob/main/assets/SalesKPIKenya.gif) |
 | Repository | Description |
 | [sales-intelligence-dashboard](https://github.com/skynet-datagrid-labs/sales-intelligence-dashboard) | Executive BI asset |
-| [Kenya-Product-Sales](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales) | Analyzing Kenyan FMCG sales KPIs by product, customer, and county from 2020–2022.|
+| [Kenya-Product-Sales](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales) | Analyzing Kenyan FMCG sales KPIs by product, customer, and county from 2020– 2023.|
 
 ---
 
