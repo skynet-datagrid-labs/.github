@@ -128,11 +128,27 @@ Business intelligence asset synthesizing six years of transactional data into ex
 | [sales-intelligence-dashboard](https://github.com/skynet-datagrid-labs/sales-intelligence-dashboard) | Executive BI asset |
 | [Kenya-Product-Sales](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales) | Analyzing Kenyan FMCG sales KPIs by product, customer, and county from 2020–2023 |
 
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_DASHBOARD_TEMPLATES_NOW_AVAILABLE_·_PRODUCTION-GRADE_·_PLUG_%26_PLAY_·_GET_YOURS_TODAY_✓" alt="Templates Available" />
+</p>
+
+<p align="center">
+  <strong>📦 Professional Tableau Dashboard Templates — Built by the Lab</strong><br/>
+  <sub>FMCG · Sales KPIs · Regional Analytics · Kenya-Ready Data Models</sub>
+</p>
+
 <p align="center">
   <a href="https://sites.google.com/view/kengadashboardtemplates">
-    <img src="https://img.shields.io/badge/Get%20the%20Dashboard%20Templates-%20-FF0000?style=for-the-badge&labelColor=0D1117&color=FF0000" alt="Get Dashboard Templates" />
+    <img src="https://raw.githubusercontent.com/skynet-datagrid-labs/.github/main/image/datagrrid.png" alt="Get Dashboard Templates" width="600"/>
   </a>
 </p>
+
+<p align="center">
+  <sub>🔴 Click the banner above to browse and download templates</sub>
+</p>
+
+---
 
 <br/>
 
