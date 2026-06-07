@@ -1,7 +1,8 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=20&pause=500&color=FF0000&center=true&vCenter=true&width=1500&height=60&lines=[!]_WARNING_::_UNAUTHORIZED_INTELLIGENCE_DETECTED_ON_THIS_NETWORK;>>>_TRACING_SIGNAL_............_ORIGIN%3A_NAIROBI_·_SKYNET_DATAGRID_LABS;>>>_IDENTITY_CONFIRMED_::_6_SENIOR_YEAR_DATA_SCIENCE_STUDENTS_·_CLEARANCE%3A_MAXIMUM;[░░░░░░░░░░]_0%25_::_BOOTING_PRODUCTION_GRADE_ML_INFRASTRUCTURE_...;[███░░░░░░░]_30%25_::_ARMING_XGBOOST_+_SCIKIT-LEARN_·_CHURN_PREDICTION_ONLINE;[█████░░░░░]_50%25_::_DEPLOYING_FASTAPI_·_DRIFT_MONITOR_ACTIVE_·_AUTO-RETRAIN_LOCKED;[███████░░░]_70%25_::_IGNITING_YOLOv11_+_RESNET152_·_94%25_mAP_·_30+_FPS_·_EDGE_READY;[████████░░]_80%25_::_FUSING_POWER_BI_+_TABLEAU_·_6_YEARS_OF_DATA_·_EXECUTIVE_LAYER_UP;[█████████░]_90%25_::_TECHPULSE_SQL_CORE_·_12_QUERIES_·_HEALTH_SCORES_CALCULATED;[██████████]_100%25_::_MLOPS_ARMED_·_DOCKER_·_CI%2FCD_·_ZERO-TOUCH_PIPELINES_LIVE;✓_ALL_SYSTEMS_NOMINAL_·_BUILT_WITH_RIGOR_·_DEPLOYED_WITH_INTENT_✓;⚡_SKYNET-DATAGRID-LABS_IS_ONLINE_·_WHERE_DATA_TELLS_THE_STORY_⚡" alt="Skynet DataGrid Labs Boot Sequence" />
 </p>
-<pre style="color: #ff0000; background-color: #000000;">
+
+<pre align="center">
 ███████╗██╗  ██╗██╗   ██╗███╗   ██╗███████╗████████╗
 ██╔════╝██║ ██╔╝╚██╗ ██╔╝████╗  ██║██╔════╝╚══██╔══╝
 ███████╗█████╔╝  ╚████╔╝ ██╔██╗ ██║█████╗     ██║   
@@ -30,13 +31,7 @@
 
 ---
 
-## `Executive Summary`
-
-We are a student-led machine learning laboratory comprising six senior-year data science candidates. We engineer production-grade ML systems end-to-end. No tutorials. No toy datasets. Real pipelines. Real deployments. Professional team workflows.
-
----
-
-## `Technical Capabilities`
+## `01 · Technical Capabilities`
 
 | Domain | Implementation | Production Metrics |
 |:---|:---|:---|
@@ -48,7 +43,7 @@ We are a student-led machine learning laboratory comprising six senior-year data
 
 ---
 
-## `Technology Stack`
+## `02 · Technology Stack`
 
 **Machine Learning & Data**
 
@@ -64,11 +59,11 @@ We are a student-led machine learning laboratory comprising six senior-year data
 
 ---
 
-## `Project Portfolio`
+## `03 · Project Portfolio`
 
-### Customer Churn Prediction Pipeline
+### `[01]` Customer Churn Prediction Pipeline
 
-**Stack:** MLOps · GitHub Actions · Scikit-learn · XGBoost · FastAPI
+Stack: `MLOps` `GitHub Actions` `Scikit-learn` `XGBoost` `FastAPI`
 
 Automated machine learning system for customer churn prediction. Implements complete MLOps lifecycle: data validation, feature engineering, parallel model training, REST API deployment, drift monitoring, and scheduled retraining.
 
@@ -76,20 +71,21 @@ Automated machine learning system for customer churn prediction. Implements comp
   <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_LOADING_CHURN_CORE_·_XGBoost_+_Scikit-learn_+_FastAPI_·_DRIFT_MONITOR_ARMED_·_AUTO-RETRAIN_LOCKED_✓" alt="Churn Preview" />
 </p>
 
-**`Live Demo:`**
-
-![Churn Prediction Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/customer-churn-prediction/main/assets/ML-churn.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/skynet-datagrid-labs/customer-churn-prediction/main/assets/ML-churn.gif" width="80%" alt="Churn Prediction Demo" />
+</p>
 
 | Repository | Description |
 |:---|:---|
 | [churn-odyssey-mlops](https://github.com/skynet-datagrid-labs/churn-odyssey-mlops) | Production MLOps pipeline |
 | [churn-flagship-project](https://github.com/skynet-datagrid-labs/churn-flagship-project) | Core churn analysis system |
 | [Customer-Churn-prediction](https://github.com/skynet-datagrid-labs/customer-churn-prediction) | Customer churn predictions |
----
 
-### Computer Vision System
+<br/>
 
-**Stack:** YOLOv11 · ResNet152 · OpenCV
+### `[02]` Computer Vision System
+
+Stack: `YOLOv11` `ResNet152` `OpenCV`
 
 Real-time object detection engineered for edge deployment. Achieves 94% mean Average Precision at 30+ frames per second on standard GPU hardware.
 
@@ -97,19 +93,19 @@ Real-time object detection engineered for edge deployment. Achieves 94% mean Ave
   <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_ACTIVATING_VISION_CORE_·_YOLOv11_+_ResNet152_+_OpenCV_·_94%25_mAP_·_30+_FPS_·_EDGE_DEPLOYED_✓" alt="CV Preview" />
 </p>
 
-**`Live Demo:`**
-
-![Computer Vision Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/COMPUTER-VISION/main/assets/cv-demo.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/skynet-datagrid-labs/COMPUTER-VISION/main/assets/cv-demo.gif" width="80%" alt="Computer Vision Demo" />
+</p>
 
 | Repository | Description |
 |:---|:---|
 | [COMPUTER-VISION](https://github.com/skynet-datagrid-labs/COMPUTER-VISION) | Real-time object detection system |
 
----
+<br/>
 
-### Sales Intelligence Dashboard
+### `[03]` Sales Intelligence Dashboard
 
-**Stack:** Power BI · Tableau · DAX
+Stack: `Power BI` `Tableau` `DAX`
 
 Business intelligence asset synthesizing six years of transactional data into executive-level strategic intelligence with real-time KPI monitoring and regional profitability analysis.
 
@@ -124,34 +120,41 @@ Business intelligence asset synthesizing six years of transactional data into ex
 | Power BI | ![Power BI Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/sales-intelligence-dashboard/main/assets/salez.gif) |
 | Tableau Visual 1| ![Tableau Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/sales-intelligence-dashboard/main/assets/Usingtableau2.gif) |
 | Tableau Visual 2 | ![Tableau Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/sales-intelligence-dashboard/main/assets/KPIS.gif) |
-| Tableau Visual 3 | ![Tableau Demo](https://github.com/skynet-datagrid-labs/sales-intelligence-dashboard/blob/main/assets/Mykpisdashboard.gif) | 
-| Tableau Visual 4 | ![Tableau Demo](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales/blob/main/assets/SalesKPIKenya.gif) |
+| Tableau Visual 3 | ![Tableau Demo](https://github.com/skynet-datagrid-labs/sales-intelligence-dashboard/blob/main/assets/Mykpisdashboard.gif?raw=true) | 
+| Tableau Visual 4 | ![Tableau Demo](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales/blob/main/assets/SalesKPIKenya.gif?raw=true) |
+
 | Repository | Description |
+|:---|:---|
 | [sales-intelligence-dashboard](https://github.com/skynet-datagrid-labs/sales-intelligence-dashboard) | Executive BI asset |
-| [Kenya-Product-Sales](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales) | Analyzing Kenyan FMCG sales KPIs by product, customer, and county from 2020– 2023.|
-| Get the templates here! | [![Datagrid Dashboard](https://github.com/skynet-datagrid-labs/.github/blob/main/image/datagrrid.png)](https://sites.google.com/view/kengadashboardtemplates)
+| [Kenya-Product-Sales](https://github.com/skynet-datagrid-labs/Kenya-Product-Sales) | Analyzing Kenyan FMCG sales KPIs by product, customer, and county from 2020–2023 |
 
----
+<p align="center">
+  <a href="https://sites.google.com/view/kengadashboardtemplates">
+    <img src="https://img.shields.io/badge/Get%20the%20Dashboard%20Templates-%20-FF0000?style=for-the-badge&labelColor=0D1117&color=FF0000" alt="Get Dashboard Templates" />
+  </a>
+</p>
 
-### TechPulse Analytics
+<br/>
 
-**Stack:** PostgreSQL · SQL
+### `[04]` TechPulse Analytics
+
+Stack: `PostgreSQL` `SQL`
 
 Analytical workspace with twelve reusable SQL queries synthesizing community activity, enterprise adoption patterns, and developer sentiment into technology health scores.
 
-**`Live Demo:`**
-
-![TechPulse Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/TechPulse/main/assets/tech_risk_demo.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/skynet-datagrid-labs/TechPulse/main/assets/tech_risk_demo.gif" width="80%" alt="TechPulse Demo" />
+</p>
 
 | Repository | Description |
 |:---|:---|
 | [TechPulse](https://github.com/skynet-datagrid-labs/TechPulse) | Technology health analytics |
 
----
+<br/>
 
-### GitHub Collab Lab
+### `[05]` GitHub Collab Lab
 
-**Stack:** Git · Branching · Pull Requests · Code Review
+Stack: `Git` `Branching` `Pull Requests` `Code Review`
 
 Mastery of professional engineering collaboration workflows including branching strategies, PR etiquette, code review cycles, and merge conflict resolution.
 
@@ -161,7 +164,7 @@ Mastery of professional engineering collaboration workflows including branching 
 
 ---
 
-## `Engineering Standards`
+## `04 · Engineering Standards`
 
 | Practice | Standard |
 |:---|:---|
@@ -175,7 +178,7 @@ Mastery of professional engineering collaboration workflows including branching 
 
 ---
 
-## `Contact`
+## `05 · Contact`
 
 | | |
 |:---|:---|
@@ -184,15 +187,7 @@ Mastery of professional engineering collaboration workflows including branching 
 
 ---
 
-*Built with rigor. Deployed with intent. Documented with pride.*
-
-**SKYNET-DATAGRID-LABS** — Senior-Year Data Science Cohort
-
-
-*Built with rigor. Deployed with intent. Documented with pride.*
-
-**SKYNET-DATAGRID-LABS** — *Senior-Year Data Science Students*
-
-<br/>
-
-</div>
+<p align="center">
+  <em>Built with rigor. Deployed with intent. Documented with pride.</em><br/><br/>
+  <strong>SKYNET-DATAGRID-LABS</strong> — Senior-Year Data Science Cohort
+</p>
