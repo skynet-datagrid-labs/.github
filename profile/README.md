@@ -194,7 +194,39 @@ Mastery of professional engineering collaboration workflows including branching 
 
 ---
 
-## `05 · Contact`
+### `[06]` Web Scraping with R — Terrain Visualization
+
+Stack: `rvest` `tidyverse` `plotly` `viridis`
+
+AI-console-driven scraping pipeline that turns BooksToScrape.com listings into an interactive 3D Digital Elevation Model — price and rating mapped to terrain, with peaks marking premium high-rated titles and valleys marking budget segments.
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_BOOTING_SKYNET_AI_CONSOLE_·_rvest_+_tidyverse_+_plotly_·_DEM_TERRAIN_ENGINE_ARMED_✓" alt="Web Scraping Preview" />
+</p>
+
+**`Live Demos:`**
+
+| Demo | Preview |
+|:---|:---|
+| Full Pipeline Walkthrough | ![Web Scraping Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/Web-Scraping-with-R/main/assets/WebscrapingInR.gif) |
+| Interactive 3D Terrain Exploration | ![Terrain Interaction Demo](https://raw.githubusercontent.com/skynet-datagrid-labs/Web-Scraping-with-R/main/assets/DEMO_GIF.gif) |
+
+**`System Snapshots:`**
+
+| View | Screenshot |
+|:---|:---|
+| AI Console Boot | ![AI Console](https://raw.githubusercontent.com/skynet-datagrid-labs/Web-Scraping-with-R/main/images/CONSOLE_DEMO1.png) |
+| 3D Terrain Output | ![Terrain Plot](https://raw.githubusercontent.com/skynet-datagrid-labs/Web-Scraping-with-R/main/images/DEMO_PLOT.png) |
+
+| Repository | Description |
+|:---|:---|
+| [Web-Scraping-with-R](https://github.com/skynet-datagrid-labs/Web-Scraping-with-R) | rvest + plotly terrain visualization of book pricing vs. rating data |
+
+<br/>
+
+----
+
+## `07 · Contact`
 
 | | |
 |:---|:---|
