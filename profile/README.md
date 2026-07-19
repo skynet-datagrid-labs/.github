@@ -159,7 +159,7 @@ Stack: `PostgreSQL` `SQL`
 Analytical workspace with twelve reusable SQL queries synthesizing community activity, enterprise adoption patterns, and developer sentiment into technology health scores.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/skynet-datagrid-labs/TechPulse/main/assets/tech_risk_demo.gif" width="80%" alt="TechPulse Demo" />
+  <img src="https://github.com/skynet-datagrid-labs/TechPulse/blob/main/assets/tech_risk_demo.gif" width="80%" alt="TechPulse Demo" />
 </p>
 
 | Repository | Description |
