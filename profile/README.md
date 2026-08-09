@@ -160,7 +160,7 @@ Analytical workspace with twelve reusable SQL queries synthesizing community act
 
 **Sample Output**
 
-![Query 1 Results](https://raw.githubusercontent.com/Tony405-spec/developer-ecosystem-analytics/main/Toptechs.png)
+![Query 1 Results](https://github.com/Tony405-spec/TechPulse/blob/main/results/query1.csv)
 
 *Android leads with 962,919,007 questions, followed by ios and sql-server*
 
