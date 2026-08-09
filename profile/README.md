@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=UnifrakturCook&weight=700&size=22&pause=700&color=FF0000&center=true&vCenter=true&width=1900&height=60&lines=•−•−•−•−•−•−•−•−•−•−•−•−•−•−;☠+𝖂𝕬𝕽𝕹𝕴𝕹𝕲+☠+::+𝖀𝖓𝖆𝖚𝖙𝖍𝖔𝖗𝖎𝖟𝖊𝖉+𝕴𝖓𝖙𝖊𝖑𝖑𝖎𝖌𝖊𝖓𝖈𝖊+𝕯𝖊𝖙𝖊𝖈𝖙𝖊𝖉;📡+>>>+𝕿𝖗𝖆𝖈𝖎𝖓𝖌+𝕾𝖎𝖌𝖓𝖆𝖑+::+𝕺𝖗𝖎𝖌𝖎𝖓+➜+𝕹𝖆𝖎𝖗𝖔𝖇𝖎+•+𝕾𝖐𝖞𝖓𝖊𝖙+𝕯𝖆𝖙𝖆𝕲𝖗𝖎𝖉+𝕷𝖆𝖇𝖘;🛰️+>>>+𝕴𝖉𝖊𝖓𝖙𝖎𝖙𝖞+𝕮𝖔𝖓𝖋𝖎𝖗𝖒𝖊𝖉+::+6+𝕾𝖊𝖓𝖎𝖔𝖗+𝕯𝖆𝖙𝖆+𝕾𝖈𝖎𝖊𝖓𝖈𝖊+𝕾𝖙𝖚𝖉𝖊𝖓𝖙𝖘;🧠+[░░░░░░░░░░]+0%25+::+𝕭𝖔𝖔𝖙𝖎𝖓𝖌+𝕸𝕷+𝕴𝖓𝖋𝖗𝖆𝖘𝖙𝖗𝖚𝖈𝖙𝖚𝖗𝖊;⚙️+[███░░░░░░░]+30%25+::+𝕬𝖗𝖒𝖎𝖓𝖌+𝖃𝕲𝕭𝖔𝖔𝖘𝖙+•+𝕾𝖈𝖎𝖐𝖎𝖙-𝕷𝖊𝖆𝖗𝖓;🚀+[█████░░░░░]+50%25+::+𝕯𝖊𝖕𝖑𝖔𝖞𝖎𝖓𝖌+𝕱𝖆𝖘𝖙𝕬𝕻𝕴+•+𝕬𝖚𝖙𝖔+𝕽𝖊𝖙𝖗𝖆𝖎𝖓;👁️+[███████░░░]+70%25+::+𝖄𝕺𝕷𝕺𝖛11+•+𝕽𝖊𝖘𝕹𝖊𝖙152+•+94%25+𝖒𝕬𝕻;📊+[████████░░]+80%25+::+𝕻𝖔𝖜𝖊𝖗+𝕭𝕴+•+𝕿𝖆𝖇𝖑𝖊𝖆𝖚+•+6+𝖄𝖊𝖆𝖗𝖘+𝕺𝖋+𝕯𝖆𝖙𝖆;🗄️+[█████████░]+90%25+::+𝕿𝖊𝖈𝖍𝕻𝖚𝖑𝖘𝖊+𝕾𝕼𝕷+𝕮𝖔𝖗𝖊+•+12+𝕼𝖚𝖊𝖗𝖎𝖊𝖘;🤖+[██████████]+100%25+::+𝕸𝕷𝕺𝖕𝖘+•+𝕯𝖔𝖈𝖐𝖊𝖗+•+𝕮𝕴/𝕮𝕯+•+𝕷𝖎𝖛𝖊;✅+𝕬𝖑𝖑+𝕾𝖞𝖘𝖙𝖊𝖒𝖘+𝕹𝖔𝖒𝖎𝖓𝖆𝖑+•+𝕭𝖚𝖎𝖑𝖙+𝖂𝖎𝖙𝖍+𝕽𝖎𝖌𝖔𝖗;⚡+𝕾𝖐𝖞𝖓𝖊𝖙-𝕯𝖆𝖙𝖆𝕲𝖗𝖎𝖉-𝕷𝖆𝖇𝖘+𝕴𝖘+𝕺𝖓𝖑𝖎𝖓𝖊+⚡;•−•−•−•−•−•−•−•−•−•−•−•−•−" alt="Skynet DataGrid Labs Boot Sequence"/>
 </p>
@@ -157,7 +156,92 @@ Business intelligence asset synthesizing six years of transactional data into ex
 
 Stack: `PostgreSQL` `SQL`
 
-Analytical workspace with twelve reusable SQL queries synthesizing community activity, enterprise adoption patterns, and developer sentiment into technology health scores.
+Analytical workspace with twelve reusable SQL queries synthesizing community activity, enterprise adoption patterns, and developer sentiment into technology health scores. A comprehensive PostgreSQL analytics platform that extracts actionable insights from StackOverflow developer activity, corporate technology ownership, and financial data — answering questions like which technologies are growing or dying, what makes a technology ecosystem healthy, how corporate structures affect developer engagement, and which companies have the strongest developer communities.
+
+**Sample Output**
+
+![Query 1 Results](https://raw.githubusercontent.com/Tony405-spec/developer-ecosystem-analytics/main/Toptechs.png)
+
+*Android leads with 962,919,007 questions, followed by ios and sql-server*
+
+**Dataset Description**
+
+The analysis uses six interconnected PostgreSQL tables from DataCamp public datasets:
+
+| Table | Description | Key Fields |
+|-------|-------------|------------|
+| `company` | Corporate entities | id, name, ticker, parent_id |
+| `stackoverflow` | Daily developer questions | tag, date, question_count, unanswered_pct |
+| `tag_company` | Tech-to-company mapping | tag, company_id |
+| `tag_type` | Technology categorization | tag, type (language/framework/database) |
+| `fortune500` | Financial metrics | rank, name, revenues, profits, employees |
+| `ev311` | Municipal service data | category, date_created, street, zip |
+
+**Database Schema**
+
+```mermaid
+erDiagram
+    company {
+        int id PK
+        varchar exchange
+        char5 ticker UK
+        varchar name
+        int parent_id FK
+    }
+    
+    tag_company {
+        varchar30 tag PK
+        int company_id FK
+    }
+    
+    stackoverflow {
+        int id PK
+        varchar30 tag FK
+        date date
+        int question_count
+        float question_pct
+        int unanswered_count
+        float unanswered_pct
+    }
+    
+    tag_type {
+        int id PK
+        varchar30 tag FK
+        varchar30 type
+    }
+    
+    fortune500 {
+        int rank PK
+        varchar title PK
+        varchar name UK
+        char5 ticker
+        varchar url
+        varchar hq
+        varchar sector
+        varchar industry
+        int employees
+        int revenues
+        numeric profits
+        numeric assets
+    }
+    
+    ev311 {
+        int id
+        text priority
+        text source
+        text category
+        timestamp date_created
+        timestamp date_completed
+        text street
+        text zip
+        text description
+    }
+    
+    company ||--o{ tag_company : owns
+    tag_company ||--o{ stackoverflow : has
+    tag_company ||--o{ tag_type : categorized_as
+    company ||--o{ company : parent_of
+```
 
 <p align="center">
   <img src="https://github.com/skynet-datagrid-labs/TechPulse/blob/main/assets/tech_risk_demo.gif" width="80%" alt="TechPulse Demo" />
