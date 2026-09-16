@@ -252,19 +252,15 @@ Business intelligence asset synthesizing six years of transactional data into ex
   <img src="https://readme-typing-svg.herokuapp.com?font=Roboto+Mono&weight=700&size=13&pause=800&color=FF0000&center=true&vCenter=true&width=1500&height=30&lines=>>>_DASHBOARD_TEMPLATES_NOW_AVAILABLE_·_PRODUCTION-GRADE_·_PLUG_%26_PLAY_·_GET_YOURS_TODAY_✓" alt="Templates Available" />
 </p>
 
-<p align="center">
-  <strong>📦 Professional Tableau Dashboard Templates — Built by the Lab</strong><br/>
-  <sub>FMCG · Sales KPIs · Regional Analytics · Kenya-Ready Data Models</sub>
-</p>
 
 <p align="center">
   <a href="https://sites.google.com/view/kengadashboardtemplates">
-    <img src="https://raw.githubusercontent.com/skynet-datagrid-labs/.github/main/image/datagrrid.png" alt="Get Dashboard Templates" width="600"/>
+    <img src="https://raw.githubusercontent.com/skynet-datagrid-labs/.github/main/image/tableau_templates_banner.png" alt="Get Dashboard Templates" width="600"/>
   </a>
 </p>
 
 <p align="center">
-  <sub>🔴 Click the banner above to browse and download templates</sub>
+  <sub> 𝔉𝔩𝔦𝔠𝔨 𝔱𝔥𝔢 𝔟𝔞𝔫𝔫𝔢𝔯 𝔞𝔟𝔬𝔳𝔢 𝔱𝔬 𝔟𝔯𝔬𝔴𝔰𝔢 𝔞𝔫𝔡 𝔡𝔬𝔴𝔫𝔩𝔬𝔞𝔡 𝔱𝔢𝔪𝔭𝔩𝔞𝔱𝔢𝔰</sub>
 </p>
 
 ---
