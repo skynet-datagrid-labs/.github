@@ -47,9 +47,9 @@ Organization API reported 4 public, 0 private repositories; all four repositorie
 ## Status
 
 - **COMPLETED AND VERIFIED:** authentication, admin role, org/repo count, metadata/settings listed above, accessible teams, branch state, issue counts, workflow listings, local workspace status.
-- **PREPARED FOR MANUAL APPLICATION:** governance, project design, issue/PR templates, security runbook/checklists, onboarding/offboarding, maintenance calendar, revised profile README proposal, repository standards.
+- **COMPLETED AND VERIFIED:** governance model, security runbooks, project workflow design, onboarding/offboarding, maintenance calendar, reusable templates, and profile proposal; published through merged PR #1.
 - **BLOCKED BY PERMISSIONS:** Projects v2 contents/read due missing `read:project`; adding that scope requires updating auth permissions. GitHub writes were not performed in this batch.
-- **NOT IMPLEMENTED:** changes to MFA/member privileges, security settings, branch rulesets, team access, project creation, repository metadata, CI workflows, profile publication. These require staged member/maintainer review and verification.
+- **NOT IMPLEMENTED / OWNER FOLLOW-UP:** MFA enforcement (member readiness unavailable); deletion, visibility and outside-collaborator restrictions (API did not apply); branch rules; Projects v2 (missing scope); team membership changes (not approved); new-repository security defaults; language-specific CI and license selection.
 
 ## Limitations and subscription
 
@@ -58,9 +58,9 @@ GitHub Free is the observed plan. Availability of security features and enforcem
 ## Post-audit implementation (26 Oct 2026)
 
 - **COMPLETED AND VERIFIED:** Dependabot vulnerability alerts enabled on all four public repositories. Secret-scanning alerts and push protection enabled on all four public repositories; each setting was re-read from the repository API after the change. Dependabot automatic security-update PRs remain disabled.
-- **PREPARED FOR REVIEW:** Draft pull request [#1](https://github.com/skynet-datagrid-labs/.github/pull/1) contains governance docs, reusable forms, contribution/security guidance, and proposed organization profile changes. It is open and unmerged; publication is not complete.
-- Organization-level defaults for future repositories remain disabled; they were not changed. Branch protections, teams, MFA, member privileges, project fields and existing project automation remain unchanged.
+- **COMPLETED AND VERIFIED:** Pull request [#1](https://github.com/skynet-datagrid-labs/.github/pull/1) merged to `main` on 26 Oct 2026 (merge commit `e5d118b`). Governance docs, reusable forms, contribution/security guidance, and the fact-checked organization profile are published.
+- Organization-level security defaults for future repositories remain disabled. Non-admin repository/team creation has been disabled; no memberships changed. Branch protections, MFA enforcement, deletion/visibility/invitation controls, and project fields remain unchanged or unresolved as documented below.
 
-The draft PR has a CodeRabbit status check with SUCCESS. This is a review check only; it does not validate all proposed governance procedures or replace maintainer review.
+The PR had no human reviews; CodeRabbit skipped the draft revision. Its latest pre-merge check summary was empty. No test suite was configured for these documentation changes; the YAML issue forms parsed and `git diff --check` passed.
 
-Check status note: CodeRabbit reported SUCCESS on an earlier PR revision. The latest head (d9cef83) currently returns no check records, so checks for the current revision are unknown/pending.
+Check status note: CodeRabbit reported SUCCESS on an earlier PR revision. The final pre-merge revision returned no check records; a passing CI result is not claimed. The PR merged on 26 Oct 2026.

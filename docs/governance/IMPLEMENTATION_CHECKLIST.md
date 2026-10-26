@@ -46,6 +46,12 @@
 
 ## Post-audit progress
 - [x] Enabled and re-verified Dependabot vulnerability alerts, secret-scanning alerts and push protection on each of four public repos.
-- [x] Opened draft PR #1 with the governance baseline and reusable templates; awaiting review.
-- [ ] Inspect PR review and CI results; merge only after maintainers approve.
+- [x] Merged PR #1 to `main`; verified published handbook, profile, and security policy.
+- [x] Checked the PR review/check state; merge completed under the user instruction. No passing check was reported for the final PR revision.
 - [ ] Continue staged rollout for MFA, member privileges, branch rules, CI, projects and team access.
+
+## Additional organization controls
+- [x] Disabled non-admin member repository creation and team creation; API read-after-write verified.
+- [ ] Review owner-only controls for repository deletion, visibility changes, and outside collaborator invitations; attempted update did not take effect.
+- [ ] Confirm all members have MFA before enabling the organization MFA requirement.
+- [ ] Obtain project scope, inspect existing projects, then configure one portfolio project if needed.
