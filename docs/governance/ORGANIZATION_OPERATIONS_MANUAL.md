@@ -112,3 +112,11 @@ Owners review organization controls quarterly and after membership or security i
 
 After the initial audit snapshot, Dependabot vulnerability alerts, secret-scanning alerts, and push protection were enabled and API-verified on all four public repositories. Automatic Dependabot security-update PRs and organization-wide defaults for new repositories remain disabled. This does not establish that any current alert scan is clean; review the repository Security tabs. The detailed change and verification record is in AUDIT_AND_IMPLEMENTATION_STATUS.md.
 
+
+## Organization control status — 26 October 2026
+
+Non-admin members cannot create repositories or teams; default repository permission remains none. Member repository deletion, visibility-change, and outside-collaborator invitations remain enabled; an API update was not reflected on read-back, so owners must change these in organization Settings → Member privileges. MFA enforcement remains disabled until owners verify 2FA enrollment and coordinate rollout. Existing team memberships were not changed. See AUDIT_AND_IMPLEMENTATION_STATUS.md for evidence and project-scope limitations.
+
+
+
+Organization owners must still review repository deletion, visibility changes, outside collaborator invitations, and MFA enforcement. The API did not apply the first three requested restrictions, and member MFA readiness could not be inspected. Do not report these controls as enforced.
