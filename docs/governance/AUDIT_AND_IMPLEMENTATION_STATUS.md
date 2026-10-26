@@ -41,11 +41,11 @@ The closed `cryo-crew` team has a Read grant on `alpha-centauri-rescue`; `dev-te
 
 The API's `role=admin` member query returned 20 accounts, including the authenticated account, but did not distinguish organization owners from other administrators. No member names are published. Existing team membership and repository grants were not changed. Review owner status and organization controls under **Organization Settings → Organization roles** and **Member privileges**.
 
-## Community — completed controls and pending publication
+## Community — completed controls and published documentation
 
 Discussions are enabled on `.github`, `alpha-centauri-rescue`, and `sales-intelligence-dashboard`; they remain disabled on `Kenya-Product-Sales`. The `.github` repository now has a descriptive summary and shared topics. The issue taxonomy is available in all four repositories and matches the organization issue forms.
 
-This branch proposes updates to the `.github` repository root README and profile links, plus `CODE_OF_CONDUCT.md`, `SUPPORT.md`, and expanded feature-specific runbooks. Until its pull request is merged, those files are **prepared for review**, not live. Existing `CONTRIBUTING.md`, `SECURITY.md`, issue forms, and PR template remain in `.github`.
+PR #5 merged these changes to `main` on 2026-10-26: corrected root README and profile links, `CODE_OF_CONDUCT.md`, `SUPPORT.md`, and expanded feature-specific runbooks. These files are live in `.github`, alongside the existing `CONTRIBUTING.md`, `SECURITY.md`, issue forms, and PR template. Automated reviews could not run because CodeRabbit reached its OSS review limit and Copilot reported insufficient review quota; `git diff --check` passed and the change was manually reviewed.
 
 ## Changes applied in this corrective run
 
@@ -59,7 +59,7 @@ This branch proposes updates to the `.github` repository root README and profile
 
 - **Completed and verified:** CLI authentication and admin role; four-repository inventory; repository and team grants; security settings above; app installation; new-repository security defaults; labels, topics, `.github` description, and Discussions toggle.
 - **Already configured:** default repository permission `none`; `alpha-centauri-rescue` Python CodeQL setup; Discussions on `alpha-centauri-rescue` and `sales-intelligence-dashboard`.
-- **Prepared for review:** organization root README and profile corrections, Code of Conduct, Support guide, and updated governance documentation on this branch.
+- **Completed and published:** organization root README and profile corrections, Code of Conduct, Support guide, and updated governance documentation merged by PR #5.
 - **Blocked by scopes:** Project inventory/configuration (`read:project`, `project`) and organization Actions/OAuth policy inspection (`admin:org`).
-- **Requires owner approval:** branch protection/required reviews or checks; tightening workflow token permissions/action allow-list; MFA enforcement; repository deletion/visibility/outside-collaborator restrictions; changes to existing team grants/membership; removal or narrowing of CodeRabbit.
+- **Requires owner approval:** branch protection/required reviews or checks; tightening workflow token permissions/action allow-list; MFA enforcement; MFA enforcement and outside-collaborator restrictions; changes to existing team grants/membership; removal or narrowing of CodeRabbit.
 - **Unavailable / not appropriate:** Dependabot version updates because no dependency manifest exists; no license selection without rights-holder approval.
