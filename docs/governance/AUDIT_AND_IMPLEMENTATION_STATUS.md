@@ -37,7 +37,7 @@ Repository labels are configured consistently: `type:bug`, `type:feature`, `type
 
 ## Team administration — inspected, no membership changes
 
-The closed `cryo-crew` team has a Read grant on `alpha-centauri-rescue`; `dev-team` has a Read grant on `sales-intelligence-dashboard`. The organization default repository permission is `none`. Non-admin members cannot create repositories or teams. Repository deletion/transfer, visibility changes, and outside collaborator invitations remain enabled; outside collaborators currently count zero. Organization MFA enforcement remains disabled.
+The closed `cryo-crew` team has a Read grant on `alpha-centauri-rescue`; `dev-team` has a Read grant on `sales-intelligence-dashboard`. The organization default repository permission is `none`. Non-admin members cannot create repositories or teams. Repository deletion/transfer and visibility changes remain enabled despite the user-approved request to make them owner-only; the settings write did not take effect and the UI change remains to be completed by an organization owner. Outside collaborator invitations remain enabled; outside collaborators currently count zero. Organization MFA enforcement remains disabled.
 
 The API's `role=admin` member query returned 20 accounts, including the authenticated account, but did not distinguish organization owners from other administrators. No member names are published. Existing team membership and repository grants were not changed. Review owner status and organization controls under **Organization Settings → Organization roles** and **Member privileges**.
 
@@ -61,5 +61,6 @@ PR #5 merged these changes to `main` on 2026-10-26: corrected root README and pr
 - **Already configured:** default repository permission `none`; `alpha-centauri-rescue` Python CodeQL setup; Discussions on `alpha-centauri-rescue` and `sales-intelligence-dashboard`.
 - **Completed and published:** organization root README and profile corrections, Code of Conduct, Support guide, and updated governance documentation merged by PR #5.
 - **Blocked by scopes:** Project inventory/configuration (`read:project`, `project`) and organization Actions/OAuth policy inspection (`admin:org`).
-- **Requires owner approval:** branch protection/required reviews or checks; tightening workflow token permissions/action allow-list; MFA enforcement; MFA enforcement and outside-collaborator restrictions; changes to existing team grants/membership; removal or narrowing of CodeRabbit.
+- **Attempted but failed / requires manual configuration:** make repository deletion/transfer and visibility changes owner-only; the API write did not take effect, so an organization owner must apply and verify these already-approved settings in Organization Settings → Member privileges.
+- **Requires owner approval:** branch protection/required reviews or checks; tightening workflow token permissions/action allow-list; MFA enforcement after member readiness review; outside-collaborator restrictions; changes to existing team grants/membership; removal or narrowing of CodeRabbit.
 - **Unavailable / not appropriate:** Dependabot version updates because no dependency manifest exists; no license selection without rights-holder approval.
