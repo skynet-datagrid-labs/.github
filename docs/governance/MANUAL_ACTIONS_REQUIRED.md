@@ -6,9 +6,9 @@
 4. Review CodeQL setup and plan suitable CI after inspecting project source and workflows. No dependency manifests were found in the four repository trees.
 5. Pilot `main` branch protection/rules only after confirming successful check names and reviewer availability; these controls can block work.
 6. Map existing teams and repository grants to current responsibilities; do not change memberships without owner review.
-7. Review the corrected profile README and current community guidance in this branch before merging.
+7. The corrected profile README and community guidance were merged by PR #5 on 2026-10-26.
 8. Select licenses only with rights-holder approval; no license was added.
 
 ## Status
 
-The governance baseline and profile were published by PR #1. Non-admin repository/team creation was disabled and verified. Repository security controls and new-repository defaults are enabled and verified. Remaining actions are the pending project authorization, owner UI changes that did not take through the API, MFA readiness, and review/publication of this corrective documentation update.
+The governance baseline and profile were published by PR #1. Non-admin repository/team creation was disabled and verified. Repository security controls and new-repository defaults are enabled and verified. PR #5 published the corrected profile and community guidance. Remaining actions are the pending project authorization, owner UI changes that did not take through the API, MFA readiness, and the permission-blocked org policy inspections.
