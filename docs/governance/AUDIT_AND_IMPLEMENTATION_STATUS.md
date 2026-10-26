@@ -54,3 +54,9 @@ Organization API reported 4 public, 0 private repositories; all four repositorie
 ## Limitations and subscription
 
 GitHub Free is the observed plan. Availability of security features and enforcement differs by repository visibility and current GitHub entitlements. Confirm in each repo Settings → Code security and analysis. Project inventory requires project scope. This audit did not inspect repository file bodies, historical secrets, Actions run logs, data licensing, member outside-collaborator status or all effective team permission calculations; absence cannot be inferred for those items.
+
+## Post-audit implementation (26 Oct 2026)
+
+- **COMPLETED AND VERIFIED:** Dependabot vulnerability alerts enabled on all four public repositories. Secret-scanning alerts and push protection enabled on all four public repositories; each setting was re-read from the repository API after the change. Dependabot automatic security-update PRs remain disabled.
+- **PREPARED FOR REVIEW:** Draft pull request [#1](https://github.com/skynet-datagrid-labs/.github/pull/1) contains governance docs, reusable forms, contribution/security guidance, and proposed organization profile changes. It is open and unmerged; publication is not complete.
+- Organization-level defaults for future repositories remain disabled; they were not changed. Branch protections, teams, MFA, member privileges, project fields and existing project automation remain unchanged.

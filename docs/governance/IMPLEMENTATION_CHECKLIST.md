@@ -43,3 +43,9 @@
 | Quarterly | MFA/access/team/outside-collaborator review, classifications, data/licenses, backups and handbook | Owner checklist and recovery test record |
 | Each release | Tag/artifacts, release notes, provenance, rollback and compatibility | Release record |
 | After incident | Contain, remediate, notify as appropriate, conduct review | Restricted incident record and corrective actions |
+
+## Post-audit progress
+- [x] Enabled and re-verified Dependabot vulnerability alerts, secret-scanning alerts and push protection on each of four public repos.
+- [x] Opened draft PR #1 with the governance baseline and reusable templates; awaiting review.
+- [ ] Inspect PR review and CI results; merge only after maintainers approve.
+- [ ] Continue staged rollout for MFA, member privileges, branch rules, CI, projects and team access.

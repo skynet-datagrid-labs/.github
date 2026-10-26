@@ -21,3 +21,7 @@ Use maintained, necessary dependencies. Pin/lock according to ecosystem; review 
 
 ## Configuration audit observations — 26 Oct 2026
 All four repositories had main unprotected. API-reported Dependabot security updates and secret scanning disabled. Organization defaults for new repositories had Dependabot alerts, secret scanning and Advanced Security off. Actions allowed all actions; SHA pinning not required. `alpha-centauri-rescue` lists CodeQL and Dependency Graph dynamic workflows, which should be inspected for run results. GitHub Free observed; feature availability varies. Verify Settings → Code security and analysis per repository before making claims about coverage.
+
+## Post-audit change
+
+On 26 Oct 2026, Dependabot vulnerability alerts, secret-scanning alerts and push protection were enabled and API-verified on all four public repositories. Automatic Dependabot security-update PRs remain disabled. Organization defaults for future repositories remain unchanged. See the audit report for the pull request and limits.
