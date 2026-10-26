@@ -1,0 +1,24 @@
+name: Task or research
+description: Plan a bounded engineering, analysis, or research task
+labels: ["type:task"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective and context
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach or research question
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Deliverables and acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies, risks, and unblock conditions

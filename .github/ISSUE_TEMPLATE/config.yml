@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability privately
+    url: https://github.com/skynet-datagrid-labs
+    about: Do not post vulnerability details publicly. Use the repository Security tab if private reporting is available, or contact an organization owner.

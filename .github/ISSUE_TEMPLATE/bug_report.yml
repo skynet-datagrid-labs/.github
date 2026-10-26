@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible defect
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and data
+      description: Include versions and public or synthetic data context. Never include secrets or personal data.
