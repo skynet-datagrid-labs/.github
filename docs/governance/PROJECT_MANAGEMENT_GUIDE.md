@@ -1,5 +1,9 @@
 # Project management guide
 
+## Existing organization Projects
+
+The organization page shows three existing Projects. Their names, fields, views, workflows, and linked repositories have not yet been inspected because the current CLI token lacks `read:project`. Complete the approved `read:project` and `project` authorization and inspect all three before configuring or creating a portfolio project.
+
 ## Workflow
 
 Backlog → Ready → In Progress → Review → Done. Use a blocked status or `status:blocked` label with a written unblock condition. Keep GitHub issue state separate from project status and update both coherently.

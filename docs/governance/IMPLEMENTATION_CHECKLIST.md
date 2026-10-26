@@ -10,7 +10,7 @@
 - [x] Operations manual, governance model, portfolio classifications and review cadence.
 - [x] Project and issue management design.
 - [x] Issue forms, PR template, CODEOWNERS example (unassigned placeholder prohibited from use), security response and contributor guidance.
-- [ ] Owner/maintainer review before publishing to `.github` or another repository.
+- [x] Governance and community guidance published in `.github` by PR #1; current corrections are prepared for review in this branch.
 - [ ] Choose license deliberately; do not add a license without rights-holder decision.
 
 ## Batch C — CI and security (not implemented)
@@ -19,8 +19,8 @@
 - [ ] Add language-specific CI only after inspecting package manifests and existing workflows.
 - [ ] Pilot branch rules based on successful check names; validate collaborator review capacity.
 
-## Batch D — Projects (prepared; scope blocker)
-- [ ] Obtain `read:project` and project write capability, inspect existing org projects.
+## Batch D — Projects (authorization pending)
+- [ ] Complete approved `read:project` and `project` authorization, then inspect three existing organization Projects.
 - [ ] If no suitable project exists, owner creates portfolio project and fields/views per manual.
 - [ ] Pilot automation and verify status sync before wider adoption.
 
@@ -45,7 +45,7 @@
 | After incident | Contain, remediate, notify as appropriate, conduct review | Restricted incident record and corrective actions |
 
 ## Post-audit progress
-- [x] Enabled and re-verified Dependabot vulnerability alerts, secret-scanning alerts and push protection on each of four public repos.
+- [x] Enabled and re-verified Dependabot vulnerability alerts/security updates, secret scanning, push protection, and private vulnerability reporting on each of four public repos.
 - [x] Merged PR #1 to `main`; verified published handbook, profile, and security policy.
 - [x] Checked the PR review/check state; merge completed under the user instruction. No passing check was reported for the final PR revision.
 - [ ] Continue staged rollout for MFA, member privileges, branch rules, CI, projects and team access.
@@ -54,4 +54,4 @@
 - [x] Disabled non-admin member repository creation and team creation; API read-after-write verified.
 - [ ] Review owner-only controls for repository deletion, visibility changes, and outside collaborator invitations; attempted update did not take effect.
 - [ ] Confirm all members have MFA before enabling the organization MFA requirement.
-- [ ] Obtain project scope, inspect existing projects, then configure one portfolio project if needed.
+- [ ] After authorization, inspect existing projects and configure one portfolio project only if no suitable project exists.

@@ -1,27 +1,35 @@
 # Security baseline and checklists
 
+See [Security configuration and verification](SECURITY_CONFIGURATION_AND_VERIFICATION.md) for live settings. The organization is on GitHub Free; feature availability depends on repository visibility and plan.
+
+## Current baseline — 26 October 2026
+
+All four public repositories have Dependabot alerts and security updates, secret-scanning alerts, push protection, and private vulnerability reporting enabled. There are no open Dependabot alerts. Dependency manifests were not found. The organization defaults for new repositories enable Dependency Graph, Dependabot alerts/security updates, secret scanning, and push protection. Advanced Security remains off.
+
+CodeQL is configured for Python in `alpha-centauri-rescue`; the latest inspected CodeQL setup run succeeded and there are no CodeQL alerts. No code-scanning analysis was returned for the other three repositories. All four `main` branches are unprotected. All GitHub Actions are allowed and SHA pinning is not required. Workflow-token defaults are write-capable for three repositories and read-only for `sales-intelligence-dashboard`; do not change without checking workflows and obtaining approval for restrictive changes.
+
 ## Secure development checklist
+
 - [ ] No credentials, personal data, or unlicensed restricted datasets committed.
-- [ ] Dataset/model source, permission, retention, and redistribution terms documented.
-- [ ] Dependencies declared and updated in small reviewed changes; lockfile maintained where applicable.
-- [ ] Input validation, safe serialization, and access controls appropriate to the application.
-- [ ] Tests cover critical transforms and edge cases; research metrics include split/provenance and limitations.
+- [ ] Dataset/model source, permissions, retention, and redistribution terms documented.
+- [ ] Dependencies declared and updated in small reviewed changes; lockfiles maintained where applicable.
+- [ ] Inputs validated; serialization and access controls fit the application.
+- [ ] Tests cover critical transforms; research metrics include split/provenance and limitations.
 - [ ] README documents safe setup; sample configuration uses placeholders only.
 
 ## GitHub Actions checklist
+
 - [ ] Workflow/job `permissions` are minimal and explicit.
-- [ ] Third-party actions pinned to full commit SHA where practical; updates reviewed.
+- [ ] Third-party actions are pinned to full commit SHAs where practical.
 - [ ] Fork and pull-request triggers do not expose secrets or privileged write tokens.
-- [ ] Avoid executing untrusted PR code in privileged `pull_request_target` context.
-- [ ] Cache/artifacts contain no secrets or restricted data; retention is appropriate.
-- [ ] Required checks are real, stable, and observed passing before branch rules require them.
+- [ ] Avoid untrusted PR code in privileged `pull_request_target` workflows.
+- [ ] Caches and artifacts contain no secrets or restricted data.
+- [ ] Required checks exist, are stable, and have successful runs before rules require them.
 
 ## Dependency policy
-Use maintained, necessary dependencies. Pin/lock according to ecosystem; review source, license, advisories and transitive changes. Enable available Dependabot alerts and security updates. Triage exploitable/high-impact issues promptly; record accepted risk, mitigation owner and review date. Do not auto-merge unreviewed breaking dependency changes.
 
-## Configuration audit observations — 26 Oct 2026
-All four repositories had main unprotected. API-reported Dependabot security updates and secret scanning disabled. Organization defaults for new repositories had Dependabot alerts, secret scanning and Advanced Security off. Actions allowed all actions; SHA pinning not required. `alpha-centauri-rescue` lists CodeQL and Dependency Graph dynamic workflows, which should be inspected for run results. GitHub Free observed; feature availability varies. Verify Settings → Code security and analysis per repository before making claims about coverage.
+Use maintained dependencies that are necessary for the project. Pin/lock according to ecosystem; review source, license, advisories, and transitive changes. Keep Dependabot security updates enabled. Add Dependabot version-update configuration only after adding a supported dependency manifest. Triage high-impact issues promptly and record accepted risks, mitigations, and review dates. Do not auto-merge unreviewed breaking changes.
 
-## Post-audit change
+## Vulnerability response
 
-On 26 Oct 2026, Dependabot vulnerability alerts, secret-scanning alerts and push protection were enabled and API-verified on all four public repositories. Automatic Dependabot security-update PRs remain disabled. Organization defaults for future repositories remain unchanged. See the audit report for the pull request and limits.
+All four public repositories support private vulnerability reporting through **Security → Report a vulnerability**. Keep exploit details out of public issues. Triage privately; identify affected versions, impact, and safe mitigation; coordinate a fix and advisory; verify credential invalidation if a secret was exposed; and document a restricted post-incident review.
