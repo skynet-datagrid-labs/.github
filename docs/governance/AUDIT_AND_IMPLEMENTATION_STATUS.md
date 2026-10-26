@@ -62,3 +62,5 @@ GitHub Free is the observed plan. Availability of security features and enforcem
 - Organization-level defaults for future repositories remain disabled; they were not changed. Branch protections, teams, MFA, member privileges, project fields and existing project automation remain unchanged.
 
 The draft PR has a CodeRabbit status check with SUCCESS. This is a review check only; it does not validate all proposed governance procedures or replace maintainer review.
+
+Check status note: CodeRabbit reported SUCCESS on an earlier PR revision. The latest head (d9cef83) currently returns no check records, so checks for the current revision are unknown/pending.
