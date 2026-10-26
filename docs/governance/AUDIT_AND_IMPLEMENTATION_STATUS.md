@@ -1,62 +1,31 @@
-# Audit and implementation status
+# Verification report
 
-Audit date: 26 October 2026. Source: authenticated GitHub CLI (`Tony405-spec`, active organization role `admin`; scopes `gist`, `read:org`, `repo`, `workflow`) and GitHub REST API. No token values retained. Local workspace was not a Git repository. Organization project inventory could not be read because token lacks `read:project` (GraphQL returned INSUFFICIENT_SCOPES). No writes were made to GitHub in this audit batch.
+## Verified
+- `gh auth status`: authenticated GitHub.com account `Tony405-spec`; scopes `gist`, `read:org`, `repo`, `workflow`; token masked by CLI.
+- Authenticated account's org membership role: `admin`, active.
+- Organization: `skynet-datagrid-labs`, Free; 4 public, 0 private repos; paginated repo inventory returned 4.
+- Repositories: names, descriptions/topics/language/default branch/push date, public visibility and main branch protection status inspected.
+- Open issues and PR summaries inspected; 0 open human issues each; closed PR activity on three project repositories.
+- Teams `cryo-crew` and `dev-team` and visible membership counts; member names intentionally omitted from public deliverables.
+- Settings described in audit report read from org/repo endpoints.
+- Local folder is not Git repository; outputs generated locally.
 
-## Inventory
+## Failed or unavailable
+- Organization Projects v2 GraphQL query: INSUFFICIENT_SCOPES requiring `read:project`; existing projects therefore unknown.
+- Team repository permission API returned null permission values; effective permission not verified.
+- Vulnerability-alert endpoint returned disabled/404; interpreted alongside security settings as not enabled.
+- No API response alone confirms CodeQL/Dependency Graph runs are passing.
 
-| Repository | Visibility | Default branch | Language | Latest push | Open issues | Classification |
-|---|---|---|---|---|---:|---|
-| `alpha-centauri-rescue` | Public | main (unprotected) | Python, Jupyter Notebook | 2026-10-20 | 0 | Active project |
-| `Kenya-Product-Sales` | Public | main (unprotected) | API language not reported | 2026-09-20 | 0 | Active project |
-| `sales-intelligence-dashboard` | Public | main (unprotected) | API language not reported | 2026-09-15 | 0 | Active project |
-| `.github` | Public | main (unprotected) | API language not reported | 2026-09-16 | 0 | Shared infrastructure |
+## Not performed
+No GitHub write, push, PR, branch rule, project, label, team, membership, security setting, visibility, license, or repository lifecycle change. No repository contents were cloned or scanned. No tests were run on source repositories.
 
-Organization API reported 4 public, 0 private repositories; all four repositories were returned through pagination. Topics and license metadata are empty; default descriptions are present on two. All four have no open human issues. Closed PR activity exists in the three project repositories. `.github` contains README, image and profile directories. Three project READMEs exist; CodeQL and Dependency Graph dynamic workflows were listed for `alpha-centauri-rescue`; a Copilot cloud-agent dynamic workflow was listed for `Kenya-Product-Sales`. Dynamic workflow listing does not establish successful CI. No CODEOWNERS, license, contribution guide, issue template or PR template was found in repository root checks. Community profile score for three repositories was 25%; `.github` also 25%.
-
-## Organization settings (verified)
-
-- Plan: Free. Active admin role: confirmed for authenticated account.
-- Default repository permission: `none`.
-- MFA requirement: disabled.
-- New-repository defaults: Advanced Security, Dependabot alerts and secret scanning disabled.
-- Members can create repositories (public/private), create teams, delete repositories, change visibility, invite outside collaborators, and create Pages.
-- Organization Projects enabled per org metadata; existing Projects v2 contents inaccessible with present token scope. Repository projects enabled.
-- Teams `cryo-crew` (6 visible members) and `dev-team` (4 visible members) exist. Repo API linked `cryo-crew` to `alpha-centauri-rescue` and `dev-team` to `sales-intelligence-dashboard`; team repo permission response was ambiguous/null. No member roster is included in public deliverables.
-- All four repositories: `main` unprotected; Actions enabled, all actions allowed, SHA pinning not required; reported secret scanning and Dependabot security updates disabled. Vulnerability alerts endpoint returned disabled/404. No rulesets listed. CodeQL/Dependency Graph workflows appeared on `alpha-centauri-rescue`; verify recent runs separately.
-
-## Priority risk register
-
-| Priority | Finding | Risk / response |
-|---|---|---|
-| Critical (conditional) | No active exposure confirmed; no repository content scanning performed | Treat as unknown, not clean. Review alerts and data handling; respond immediately if a real secret or restricted dataset is found. |
-| High | MFA requirement disabled; broad member repo deletion/visibility/invitation powers | Owner should assess member readiness and reduce privilege in a planned change window. Preserve emergency owner access. |
-| High | All default branches unprotected; no required checks verified | Pilot PR review/rules and checks on a suitable repo only after checks exist and maintainers are staffed. |
-| High | Security alert/scanning defaults disabled; per-repo alerts/settings disabled | Verify eligible features in settings; enable suitable alerts/scanning with maintainer capacity and plan support. |
-| Medium | Actions allow all actions; SHA pinning not required; no shared workflow baseline | Add least-privilege workflow standards and pin external actions in reviewed changes. |
-| Medium | Missing license/contribution/security/PR and issue guidance detected in root metadata/profile checks | Prepare reusable guidance, then owner/maintainer review before publication; license requires deliberate selection. |
-| Medium | Organization profile lists many repositories, metrics and production claims not in current inventory | Validate links, scope and evidence before retaining/promoting. Existing profile was not overwritten. |
-| Low | Empty topic metadata, inconsistent descriptions and limited community health assets | Improve metadata as repositories receive maintainer review. |
-
-## Assets to preserve
-
-- Existing `.github` profile visuals and profile README; redesign as a reviewed proposal rather than deleting history.
-- `alpha-centauri-rescue` existing CodeQL and Dependency Graph workflows.
-- Existing team/repository structure and existing project files.
-- Existing open-source/public visibility and default permission none.
-
-## Status
-
-- **COMPLETED AND VERIFIED:** authentication, admin role, org/repo count, metadata/settings listed above, accessible teams, branch state, issue counts, workflow listings, local workspace status.
-- **PREPARED FOR MANUAL APPLICATION:** governance, project design, issue/PR templates, security runbook/checklists, onboarding/offboarding, maintenance calendar, revised profile README proposal, repository standards.
-- **BLOCKED BY PERMISSIONS:** Projects v2 contents/read due missing `read:project`; adding that scope requires updating auth permissions. GitHub writes were not performed in this batch.
-- **NOT IMPLEMENTED:** changes to MFA/member privileges, security settings, branch rulesets, team access, project creation, repository metadata, CI workflows, profile publication. These require staged member/maintainer review and verification.
-
-## Limitations and subscription
-
-GitHub Free is the observed plan. Availability of security features and enforcement differs by repository visibility and current GitHub entitlements. Confirm in each repo Settings → Code security and analysis. Project inventory requires project scope. This audit did not inspect repository file bodies, historical secrets, Actions run logs, data licensing, member outside-collaborator status or all effective team permission calculations; absence cannot be inferred for those items.
+## Package validation
+Files were generated locally from the inspected facts and proposed procedures. Treat feature support, settings and portfolio activity as time-sensitive; re-check in GitHub before application.
 
 ## Post-audit implementation (26 Oct 2026)
 
 - **COMPLETED AND VERIFIED:** Dependabot vulnerability alerts enabled on all four public repositories. Secret-scanning alerts and push protection enabled on all four public repositories; each setting was re-read from the repository API after the change. Dependabot automatic security-update PRs remain disabled.
 - **PREPARED FOR REVIEW:** Draft pull request [#1](https://github.com/skynet-datagrid-labs/.github/pull/1) contains governance docs, reusable forms, contribution/security guidance, and proposed organization profile changes. It is open and unmerged; publication is not complete.
 - Organization-level defaults for future repositories remain disabled; they were not changed. Branch protections, teams, MFA, member privileges, project fields and existing project automation remain unchanged.
+
+The draft PR check summary returned one check/status record with empty name, status, and conclusion fields; no passing CI result is claimed. The four issue-form files parsed successfully with PyYAML. The PR worktree is clean after push.

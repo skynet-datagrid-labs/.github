@@ -107,3 +107,8 @@ If a new check blocks valid work, inspect its run and failure logs; fix the work
 ## Review cadence
 
 Owners review organization controls quarterly and after membership or security incidents. Maintainers review repository standards and contribution guidance quarterly. Project leads review boards weekly and milestones monthly. Security contact reviews open alerts weekly and response procedures quarterly. Assign actual people and contact channels through an owner decision; this manual intentionally does not invent them.
+
+## Current configuration note — 26 October 2026
+
+After the initial audit snapshot, Dependabot vulnerability alerts, secret-scanning alerts, and push protection were enabled and API-verified on all four public repositories. Automatic Dependabot security-update PRs and organization-wide defaults for new repositories remain disabled. This does not establish that any current alert scan is clean; review the repository Security tabs. The detailed change and verification record is in AUDIT_AND_IMPLEMENTATION_STATUS.md.
+
