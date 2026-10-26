@@ -24,9 +24,9 @@ Files were generated locally from the inspected facts and proposed procedures. T
 
 ## Post-audit implementation (26 Oct 2026)
 
-- **COMPLETED AND VERIFIED:** Dependabot vulnerability alerts enabled on all four public repositories. Secret-scanning alerts and push protection enabled on all four public repositories; each setting was re-read from the repository API after the change. Dependabot automatic security-update PRs remain disabled.
+- **Historical initial snapshot (superseded):** Dependabot alerts, secret scanning and push protection were enabled in the first configuration pass. A subsequent corrective pass also enabled and verified Dependabot security updates and private vulnerability reporting on all four public repositories; see the current corrective configuration section below.
 - **COMPLETED AND VERIFIED:** [PR #1](https://github.com/skynet-datagrid-labs/.github/pull/1) merged 26 Oct 2026, commit `e5d118b`; published docs, templates, policies, and profile confirmed through the Contents API.
-- Organization-level security defaults for future repositories remain disabled. Member repository/team creation has been disabled for non-admins. Branch protections, MFA enforcement, deletion/visibility/invitation controls, membership, and project fields remain unchanged or unresolved as detailed below.
+- **Historical initial snapshot (superseded):** New-repository defaults were later enabled and verified for dependency graph, Dependabot alerts/security updates, secret scanning and push protection. Non-admin repository/team creation is disabled. Remaining controls are detailed in the corrective configuration section below.
 
 The draft PR check summary returned one check/status record with empty name, status, and conclusion fields; no passing CI result is claimed. The four issue-form files parsed successfully with PyYAML. The PR worktree is clean after push.
 
@@ -34,3 +34,10 @@ Organization privileges read after update: members cannot create repositories or
 
 
 No GitHub writes occurred in the initial audit only. Subsequent work enabled and verified repository security alerts/protection on all four public repositories, restricted non-admin repository/team creation, and merged governance materials via PR #1. Read-after-write for repository deletion, visibility and outside-collaborator privileges remained true. Organization MFA remains off because member readiness is unavailable to the API. Project contents remain inaccessible without project scope.
+
+
+## Corrective configuration update — 2026-10-26
+
+The subsequent live configuration pass enabled and verified Dependabot alerts and security updates, secret scanning, push protection, and private vulnerability reporting on all four public repositories. Organization defaults for new repositories are enabled for dependency graph, Dependabot alerts/security updates, secret scanning, and push protection. The organization is on GitHub Free; Advanced Security is disabled. No dependency manifests were found, and no Dependabot version-update files were added. The profile/community updates and expanded governance records are in the corrective PR branch and are not considered published until merged.
+
+The organization page lists three Projects, but GitHub GraphQL still rejects inspection because the active CLI token lacks `read:project`. User-approved authorization for `read:project` and `project` has been initiated but the token scope readback remains unchanged. Org Actions policy and OAuth-app policy reads return 403 for missing `admin:org`. User-approved member restrictions for deletion/transfer and visibility changes remain attempted but not applied; API readback still shows them enabled. No repository visibility, member/team membership, credential, or ownership changes were made.

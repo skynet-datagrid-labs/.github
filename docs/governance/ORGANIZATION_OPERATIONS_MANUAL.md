@@ -68,7 +68,7 @@ Quarterly, owners review org owners, teams, outside collaborators, repository gr
 
 Use MFA on every organization account. Avoid committing credentials, personal data, restricted datasets, or license-incompatible material. Store runtime credentials in GitHub Actions secrets or an approved external secret manager with minimum scope and rotation owner. Prefer synthetic or documented public sample data. Review dataset terms, privacy, consent and redistribution rights before committing data.
 
-Dependencies: declare and pin direct dependencies using the ecosystem lockfile where supported; update in small reviewed changes; inspect advisories and transitive changes; remove unused packages. Enable Dependabot alerts/security updates where available. Consider secret scanning/push protection and code scanning according to repository language, visibility and plan. GitHub Free plan and API-reported org defaults show these new-repository security controls are disabled; repository inspection showed Dependabot security updates and secret-scanning features disabled on all four repositories. Feature availability can vary by visibility and account entitlement. Validate in Settings → Code security and analysis before relying on controls.
+Dependencies: declare and pin direct dependencies using the ecosystem lockfile where supported; update in small reviewed changes; inspect advisories and transitive changes; remove unused packages. Dependabot alerts and security updates, secret scanning, push protection, and private vulnerability reporting are enabled on all four current public repositories. Organization defaults for new repositories enable dependency graph, Dependabot alerts/security updates, secret scanning, and push protection. Advanced Security remains off; feature availability for future private repositories depends on plan entitlement. No dependency manifests were found in the current repository trees, so version-update configuration was not added. Recheck Settings → Code security and analysis after repository or plan changes.
 
 Actions: use least privilege (`permissions` at workflow/job level); avoid `write-all`; pin third-party actions to full commit SHAs where practical; restrict triggers for untrusted forks; do not expose secrets to pull-request code; cache safely; review artifact contents and retention. Current repo API showed Actions enabled with all actions allowed and SHA pinning not required; CodeQL/Dependency Graph dynamic workflows appeared for `alpha-centauri-rescue`, but this does not prove successful runs. No default branch was protected on the four repositories at inspection. Do not require checks until the checks exist and have successful runs.
 
@@ -92,13 +92,13 @@ GitHub is the canonical remote, not a complete independent backup. For important
 
 ## Manual GitHub setup guide
 
-**Project:** organization page → Projects → New project → Board. Add Status, Priority, Repository, Milestone and Work type fields; create Board, Roadmap, Triage, Blocked and Release views. Add repositories and define automation only after field behavior is confirmed. CLI/API alternatives require suitable project scopes; current token lacks `read:project`, so project inventory was not available.
+**Project:** inspect the three existing organization Projects before changing or creating anything. The authenticated organization page shows three Projects, but the current CLI token lacks `read:project`; titles, fields, views, workflows, and linked repositories remain unverified. User-approved OAuth authorization for `read:project` and `project` is pending. Once authorized, inspect all three, identify a suitable portfolio project, and configure one only if needed. Do not create a duplicate.
 
 **Repository security:** open each repository → Settings → Code security and analysis. Check available Dependabot alerts/updates, secret scanning/push protection, and code scanning. Enable only features actually offered; record date and result. For `alpha-centauri-rescue`, inspect existing CodeQL/Dependency Graph dynamic workflows before changing them.
 
 **Branch rules:** repository → Settings → Branches → Add branch protection rule for `main` or use Rulesets if available. First identify actual required checks via Actions/Checks. Pilot one repository; require PRs and one approval only where maintainers are available; consider stale approval dismissal and conversation resolution. Do not require status names that have not run. Exemptions and enforcement vary by plan.
 
-**Organization security controls:** organization → Settings → Authentication security / Member privileges / Repository defaults. Review MFA requirement and creation/deletion/visibility/invitation controls with owners. The current audit observed MFA requirement disabled and broad member repository privileges; changes need owner decision and member readiness planning.
+**Organization security controls:** organization → Settings → Authentication security / Member privileges / Repository defaults. Review MFA requirement and creation/deletion/visibility/invitation controls with owners. The current audit observed MFA requirement disabled. Members cannot create repositories or teams; repository deletion/transfer and visibility changes remain enabled despite the user-approved request to restrict them. Verify remaining owner-level settings and MFA readiness before changing them.
 
 ## Failure handling and rollback
 
@@ -110,7 +110,7 @@ Owners review organization controls quarterly and after membership or security i
 
 ## Current configuration note — 26 October 2026
 
-After the initial audit snapshot, Dependabot vulnerability alerts, secret-scanning alerts, and push protection were enabled and API-verified on all four public repositories. Automatic Dependabot security-update PRs and organization-wide defaults for new repositories remain disabled. This does not establish that any current alert scan is clean; review the repository Security tabs. The detailed change and verification record is in AUDIT_AND_IMPLEMENTATION_STATUS.md.
+Current verified state: Dependabot vulnerability alerts and security-update PRs, secret-scanning alerts, push protection, and private vulnerability reporting are enabled on all four public repositories. Organization defaults for new repositories are enabled for dependency graph, Dependabot alerts/security updates, secret scanning, and push protection. No open Dependabot or CodeQL alerts were returned at the point-in-time API check; this does not guarantee absence of vulnerabilities or secrets. See AUDIT_AND_IMPLEMENTATION_STATUS.md and SECURITY_CONFIGURATION_AND_VERIFICATION.md.
 
 
 ## Organization control status — 26 October 2026

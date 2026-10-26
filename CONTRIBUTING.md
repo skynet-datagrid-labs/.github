@@ -7,4 +7,4 @@
 5. Open a pull request using the template; link the issue and disclose data, dependency, model, workflow, and security impacts.
 6. Address review feedback and verify checks before merge.
 
-Never commit credentials, personal information, or datasets/models you lack permission to redistribute. Report vulnerabilities privately through the repository Security tab if available, or contact an organization owner. Be respectful and follow the project's code of conduct once adopted.
+Never commit credentials, personal information, or datasets/models you lack permission to redistribute. Report vulnerabilities privately through the repository Security tab; private vulnerability reporting is enabled on all four public repositories. Be respectful and follow the [Code of Conduct](CODE_OF_CONDUCT.md).
